@@ -38,7 +38,6 @@ export const useGraphCreation = () => {
         container: graphDivRef.current,
         elements: createGraph(numberOfNodes, complexity),
         style: setGraphStyle(ThemeOptions.DARK),
-        wheelSensitivity: 0.1,
       });
       cyRef.current.layout({ name: layout }).run();
 
